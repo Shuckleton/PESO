@@ -1,0 +1,136 @@
+body {
+    font-family: 'Average', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left-container, .right-container {
+    padding: 20px;
+}
+
+.left-container {
+    flex: 1;
+    background-color: #761F1B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    height: 100%;
+    margin-top: 0px;
+}
+
+.right-container {
+    flex: 1.5; /* You can adjust this to make it bigger or smaller */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting {
+    margin: 0;
+    font-size: 20px;
+    margin-left: 0px;
+    color: #ffffff;
+    align-self: center;
+}
+
+.welcome {
+    margin: 0px 0;
+    margin-left: 0px;
+    color: #fff;
+    font-size: 90px; /* Bigger than "Hello, Admin" */
+    align-self: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+
+input[type="text"], input[type="password"] {
+    margin: 5px 0;
+    padding: 15px;
+    border: none;
+    width: 90%;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-left: 110px;
+    font-family: 'Average', serif;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+
+button {
+    margin: 10px 0;
+    padding: 15px 80px;
+    margin-left: 100px;
+    background-color: #289A00;
+    color: white;
+    border: none;
+    font-size: 11px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Average', serif;
+    align-self: center; /* Center the button horizontally */
+}
+
+button:hover {
+    background-color: #228800;
+}
+
+.right-container img {
+    margin: 10px 0;
+}
+
+.big-logo {
+    width: 40%;
+    margin: 0 auto; /* Center the big logo */
+}
+
+.small-logos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.small-logos img {
+    width: 12%;
+    margin: 10px;
+}
+
+.bottom-text {
+    margin-top: 90px; /* Push the text to the bottom */
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: center; /* Center text within the container */
+    align-self: center;
+}
+
+.bottom-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.back-to-website {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.back-to-website:hover {
+    color: #FFE500; /* Change color on hover */
+}

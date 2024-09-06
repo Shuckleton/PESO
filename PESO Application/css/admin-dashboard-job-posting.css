@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 80px;
+    background-color: #761F1B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-button {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.icon-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-button:hover {
+    opacity: 0.7;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Inter, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: Inter, sans-serif;
+    color: #761F1B;
+}
+
+h2 {
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    color: #444;
+}
+
+.job-form {
+    width: 100%;
+    max-width: 95%;
+    margin-left: 20px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Inter, sans-serif;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.upload-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.upload-job-image-wrapper {
+    width: 583px;
+    height: 328px;
+}
+
+.upload-logo-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-logo-text {
+    text-align: center;
+    color: #aaa;
+    position: absolute;
+}
+
+.image-preview {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.job-image-preview {
+    width: 100%;
+    height: 100%;
+}
+
+/* Company Name */
+
+label[for="company-logo"] {
+    font-size: 15px; /* Example of setting specific label font size */
+    color: #761F1B;
+    font-family: Inter, sans-serif;
+}
+
+label[for="company-name"] {
+    font-size: 15px; /* Example of setting specific label font size */
+    margin-left: -350px;
+    margin-top: -122px;
+    color: #761F1B;
+    font-family: Inter, sans-serif;
+}
+
+/* Company Name Input Styled as a Line */
+#company-name {
+    font-size: 24px; /* Larger font size for the company name */
+    width: calc(100% - 20px); /* Adjust width as needed */
+    padding: 12px 0; /* Padding only top and bottom */
+    border: none; /* Remove default border */
+    color: #761F1B;
+    border-bottom: 2px solid #ccc; /* Add bottom border to simulate a line */
+    border-radius: 0; /* Remove border-radius */
+    margin-left: -350px; /* Remove or adjust margin-left as needed */
+    font-family: Inter, sans-serif;
+    margin-bottom: 15px; /* Margin bottom for spacing */
+    background: none; /* Remove background color */
+    outline: none; /* Remove outline on focus */
+}
+
+/* Focus state for the Company Name input */
+#company-name:focus {
+    border-bottom-color: #761F1B; /* Change bottom border color on focus */
+}
+
+label[for="job-position"] {
+    font-size: 15px; /* Example of setting specific label font size */
+    margin-left: 245px;
+    margin-top: -122px;
+    color: #761F1B;
+    font-family: Inter, sans-serif;
+}
+
+#job-position {
+    font-size: 24px;
+    width: calc(50% - 50px);
+    padding: 12px 0;
+    border: none;
+    color: #761F1B;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0; 
+    margin-left: 245px;
+    font-family: Inter, sans-serif;
+    margin-bottom: 15px; 
+    background: none;
+    outline: none;
+}
+
+#job-position:focus {
+    border-bottom-color: #761F1B;
+}
+
+
+label[for="job-image"] {
+    font-size: 16px;
+    color: #761F1B;
+    font-family: Inter, sans-serif;
+}
+
+label[for="job-qualifications"] {
+    font-size: 16px; /* Example of setting specific label font size */
+    color: #761F1B;
+    font-family: Inter, sans-serif;
+}
+
+label[for="job-description"] {
+    font-size: 16px; /* Example of setting specific label font size */
+    color: #761F1B;
+    font-family: Inter, sans-serif;
+}
+
+label[for="job-location"] {
+    font-size: 16px; /* Example of setting specific label font size */
+    color: #761F1B;
+    font-family: Inter, sans-serif;
+}
+
+label[for="contact-details"] {
+    font-size: 16px; /* Example of setting specific label font size */
+    color: #761F1B;
+    font-family: Inter, sans-serif;
+}
+
+/* Job Description */
+#job-description {
+    width: 100%; /* Adjust width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Inter, sans-serif;
+    height: 312px; /* Example of adjusting height */
+    margin-top: 18px;
+    margin-bottom: 15px; /* Separate margin for job description */
+}
+
+/* Contact Details */
+#contact-details {
+    width: 100%; /* Adjust width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Inter, sans-serif;
+    height: 312px;
+    margin-top: 13px;
+    margin-bottom: 15px; /* Separate margin for contact details */
+}
+
+#job-location {
+    width: 100%; /* Adjust width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Inter, sans-serif;
+    height: 312px; /* Example of adjusting height */
+    margin-top: 18px;
+    margin-bottom: 15px; /* Separate margin for job description */
+}
+
+/* Job Qualifications and Job Location */
+#job-qualifications {
+    width: calc(100% - 20px); /* Adjust width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Inter, sans-serif;
+    resize: none; /* Prevent resizing for job qualifications and job location */
+    margin-bottom: 15px; /* Separate margin for job qualifications and job location */
+}
+
+/* Button */
+.form-group button {
+    width: 100%; /* Button takes full width of its container */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-family: Inter, sans-serif;
+    font-size: 14px; /* Example of setting button font size */
+    background-color: #289A00;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px; /* Separate margin for button */
+}
+
+.form-group button:hover {
+    background-color: #228800;
+}
+
+.form-group {
+    margin-right: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .job-form {
+        width: 100%;
+        padding: 10px;
+        margin-left: 0;
+    }
+}

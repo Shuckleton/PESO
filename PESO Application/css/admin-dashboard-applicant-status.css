@@ -1,0 +1,145 @@
+/* Reset and base styles */
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 80px;
+    background-color: #761F1B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-button {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.icon-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-button:hover {
+    opacity: 0.7;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Inter, sans-serif;
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: Inter, sans-serif;
+    color: #761F1B;
+}
+
+h2 {
+    text-align: center;
+    margin-top: -30px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    color: #444;
+}
+
+h3 {
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.table-container {
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    width: 100%; /* Change to 100% or adjust as needed */
+    max-width: 1200px; /* Set a max-width if needed */
+ 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #444;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+
+}
+
+th {
+    background-color: #761F1B;
+    font-weight: normal;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 300px; /* Adjust width as needed */
+}
+
+
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 4px;
+    font-family: Inter, sans-serif;
+    text-align: center;
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* For older versions of Safari */
+    background-color: #fff; /* Default background color */
+    color: #333; /* Default text color */
+    }
+    
+    select:focus {
+        outline: none;
+    }
+    
+
+
+
+
+/* Additional styles for other elements if needed */
