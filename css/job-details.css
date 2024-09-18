@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #761F1B;
+    padding: 20px;
+    color: white;
+}
+h3 {
+    font-size: 10px; /* Adjust the size as needed */
+}
+
+
+.header-left {
+    display: flex;           /* Use flexbox to align items in a row */
+    align-items: center;    /* Vertically center the items */
+}
+
+.header-logo {
+    max-width: 60px;       /* Adjust size as needed */
+    height: auto;          /* Maintain aspect ratio */
+    margin-right: 20px;    /* Space between logo and text */
+}
+
+.header-text {
+    font-family: 'Average', serif;
+    font-size: 20px;
+    margin-top: 0;         /* Remove any top margin if it exists */
+    margin-bottom: 0;      /* Remove any bottom margin if it exists */
+}
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    margin-left: auto;
+}
+
+.search-input {
+    padding: 8px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #005C2A;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon {
+    width: 20px;
+    height: auto;
+}
+
+.search-button:hover {
+    background-color: #003B1B;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.top-container .left {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.top-container .left img {
+    width: 90%;
+    margin-left: 50px;
+    margin-top: 20px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.top-container .right {
+    width: 50%;
+}
+
+.top-container .right h2 {
+    font-size: 30px;
+    color: #333;
+    font-family: 'Average', serif;
+    margin-top: 20px;
+}
+
+.top-container .right h3.job-position {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Inter, sans-serif;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.top-container .right p.job-description {
+    font-size: 16px;
+    color: #666;
+    font-family: Inter, sans-serif;
+    line-height: 1.5;
+    margin-right: 50px;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bottom-container .left {
+    width: 50%; 
+   
+    padding: 20px; /* Optional: Adds space inside the border */
+
+ 
+}
+
+.bottom-container .right {
+    width: 50%;
+    
+}
+
+.bottom-container .right p {
+    font-size: 16px;
+    color: #333;
+    font-family: Inter, sans-serif;
+    margin-bottom: 10px;
+}
+
+.bottom-container .right strong {
+    color: #761F1B;
+}
+
+/* Form styles */
+
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+.add-skill-button {
+    width: 16px; 
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+    margin-right: 10px; /* Adjust spacing as needed */
+    border: none; /* Remove border */
+    background-color: transparent; /* Remove background color */
+}
+
+.remove-skill-icon {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust spacing as needed */
+}
+
+.remove-button {
+    width: 20px; 
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+    margin-left: 10px; /* Adjust spacing as needed */
+    border: none; /* Remove border */
+    background-color: transparent; /* Remove background color */
+}
+
+.skills-list {
+    margin-top: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-item input {
+    flex: 2;
+    margin-right: 10px;
+}
+
+.skill-item button {
+    margin-left: 10px;
+}
+
+.photo-and-fields {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.photo-upload {
+    margin-right: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-upload input[type="file"] {
+    display: none; /* Hide the actual file input */
+}
+
+.photo-upload label {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+.text-fields label,
+.text-fields input,
+.large-fields label,
+.large-fields input {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.large-fields input,
+.text-fields input {
+    width: 80%;
+    padding: 8px;
+    border-left: 5px solid #4A90E2;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.text-fields input {
+    width: 300px;
+    padding-bottom: 50px;
+}
+
+.text-fields input:focus,
+.large-fields input:focus {
+    border-color: #357ABD;
+    outline: none;
+    box-shadow: 0 0 5px rgba(53, 122, 189, 0.5);
+}
+
+.large-fields {
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #319F43;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0e5319;
+}
+
+/* Footer styles */
+#footer {
+    background-color: #761F1B; /* Background color */
+    color: white; /* Text color */
+    padding: 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 400px; /* Adjust size as needed */
+    margin-bottom: 70px;
+}
+
+.sponsors {
+    display: flex;
+    gap: 20px; /* Gap between sponsor images */
+}
+
+.sponsors img {
+    max-width: 80px; /* Adjust size as needed */
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    font-family: 'Average', serif;
+    font-size: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0; /* Vertical spacing between links */
+}
+
+.footer-links a:hover {
+    color: #ffe817;
+}
+/* Hide header text on mobile devices */
+@media (max-width: 768px) {
+    .header-text {
+        display: none; /* Hide the header text */
+    }
+}

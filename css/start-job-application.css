@@ -1,0 +1,545 @@
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #761F1B;
+    padding: 20px;
+    color: white;
+}
+
+.header-logo {
+    max-width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.header-text {
+    font-family: 'Average', serif;
+    font-size: 20px;
+    position: absolute;
+    width: 250px;
+    margin-left: 80px;
+    margin-top: 0px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.search-form {
+    display: flex;
+    margin-left: auto;
+    margin-top: 0px;
+}
+
+.search-input {
+    padding: 8px 80px;
+    font-size: 14px;
+    border: none;
+    padding-left: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-family: Inter, sans-serif;
+}
+
+.search-button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #005C2A;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon {
+    width: 20px; /* Adjust as needed */
+    height: auto;
+}
+
+.search-button:hover {
+    background-color: #003B1B;
+}
+
+.title-header {
+    text-align: left; /* Center align the content */
+    margin: 40px 0; /* Add margin above and below the title */
+    margin-left: 50px;
+    font-family: 'Average', serif;
+    color: #761F1B;
+}
+
+.title-header h1 {
+    color: #761F1B;
+    font-size: 35px;; /* Adjust the font size of the heading */
+    margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.title-header p {
+    font-size: 1.0em; /* Adjust the font size of the paragraph */
+    font-family: Inter, sans-serif;
+    color: #210202; /* Set a color for the paragraph text */
+}
+
+
+.container-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px; /* Adjust margin as needed */
+    margin-left: 105px;
+}
+
+.container-logo {
+    width: 50px; /* Adjust size of logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and title */
+}
+
+.container-title h1 {
+    font-family: 'Average', serif;
+    color: #444;
+    font-size: 1.5em; /* Adjust font size of title */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.flexbox {
+    background-color: white;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexbox-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.flexbox-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.flexbox-text {
+    font-size: 14px;
+    margin-bottom: 70px;
+    max-height: 50px;
+    color: #000;
+}
+
+.flexbox-title {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make the title bold */
+    margin-bottom: 8px; /* Add some space below the title */
+    color: #333; /* Text color */
+    font-family: 'Average', serif;
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+.flexbox-button {
+    position: relative;
+    background-color: #005C2A;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}
+
+.flexbox-button::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffe817;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.flexbox-button:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #ccbe00; /* Dark background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    display: block; /* Always visible */
+}
+
+#backToTopBtn:hover {
+    background-color: #797102; /* Add a dark-grey background on hover */
+}
+
+#backToTopBtn img {
+    width: 30px; /* Width of the icon */
+    height: 30px; /* Height of the icon */
+}
+
+#fb-button {
+    position: fixed; /* Fixed position */
+    bottom: 90px;
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 100; /* Higher z-index to place it above backToTopBtn */
+    background-color: #064392; /* Dark background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#fb-button:hover {
+    background-color: #032e66;; /* Darken background on hover */
+}
+
+#fb-button img {
+    width: 30px; /* Width of the icon */
+    height: 30px; /* Height of the icon */
+}
+
+#footer {
+    background-color: #761F1B; /* Background color */
+    color: white; /* Text color */
+    padding: 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 400px; /* Adjust size as needed */
+    margin-bottom: 70px;
+}
+
+.sponsors {
+    display: flex;
+    gap: 20px; /* Gap between sponsor images */
+}
+
+.sponsors img {
+    max-width: 80px; /* Adjust size as needed */
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    font-family: 'Average', serif;
+    font-size: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0; /* Vertical spacing between links */
+}
+
+.footer-links a:hover {
+    color: #ffe817;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #761F1B;
+        padding: 30px;
+        color: white;
+    }
+    .logo img {
+        width: 250px; /* Adjust size as needed */
+        margin-bottom: 0px;
+        margin-top: -50px;
+        margin-left: 0px;
+    }
+    .sponsors {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .sponsors img {
+        max-width: 40px; /* Adjust size as needed */
+    }
+    .footer-links {
+        font-size: 13px;
+    }
+    .footer-links a {
+        margin-left: 15px;
+    }
+    .container-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px; /* Adjust margin as needed */
+        margin-left: 90px;
+    }
+    .header-logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+    
+    .header-text {
+        display: none;
+    }
+    
+    .header-right {
+        display: flex;
+    }
+
+    .search-form {
+        margin-left: -250px;
+        margin-right: -10px;
+        display: flex;
+    }
+    .search-input {
+        padding: 5px 0px;
+        display: flex;
+        font-size: 14px;
+        border: none;
+        padding-left: 15px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        font-family: Inter, sans-serif;
+    }
+    
+    .search-button {
+        padding: 8px 15px;
+        border: none;
+        background-color: #005C2A;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .search-icon {
+        width: 20px; /* Adjust as needed */
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #761F1B;
+        padding: 30px;
+        color: white;
+    }
+    .logo img {
+        width: 250px; /* Adjust size as needed */
+        margin-bottom: 0px;
+        margin-top: -50px;
+        margin-left: 0px;
+    }
+    .sponsors {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .sponsors img {
+        max-width: 40px; /* Adjust size as needed */
+    }
+    .footer-links {
+        font-size: 13px;
+    }
+    .footer-links a {
+        margin-left: 15px;
+    }
+    .container-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px; /* Adjust margin as needed */
+        margin-left: 90px;
+    }
+    .header-logo {
+        width: 120px;
+        height: 60px;
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+    .header-logo img {
+        width: 90px;
+        height: 50px;
+    }
+    
+    .header-text {
+        display: none;
+    }
+    
+    .header-right {
+        display: flex;
+    }
+
+    .search-form {
+        margin-left: -250px;
+        margin-right: -10px;
+        display: flex;
+    }
+    .search-input {
+        padding: 5px 30px;
+        display: flex;
+        font-size: 14px;
+        border: none;
+        padding-left: 15px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        font-family: Inter, sans-serif;
+    }
+    
+    .search-button {
+        padding: 8px 15px;
+        border: none;
+        background-color: #005C2A;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .search-icon {
+        width: 20px; /* Adjust as needed */
+        height: auto;
+    }
+    .title-header {
+        text-align: left; /* Center align the content */
+        margin: 40px 0; /* Add margin above and below the title */
+        margin-right: 40px;
+        margin-left: 50px;
+        font-family: 'Average', serif;
+        color: #761F1B;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #761F1B;
+        padding: 20px;
+        color: white;
+    }
+    .sponsors {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .sponsors img {
+        max-width: 40px; /* Adjust size as needed */
+    }
+    .footer-links {
+        font-size: 13px;
+    }
+    .footer-links a {
+        margin-left: 15px;
+    }
+    .container-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px; /* Adjust margin as needed */
+        margin-left: 90px;
+    }
+    .header-logo {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        margin-top: 0px;
+        max-width: none;
+    }
+    .header-text {
+        display: none;
+    }
+    
+    .header-right {
+        display: flex;
+    }
+
+    .search-form {
+        margin-left: -250px;
+        margin-right: 10px;
+        display: flex;
+    }
+    .search-input {
+        padding: 5px 80px;
+        display: flex;
+        font-size: 14px;
+        border: none;
+        padding-left: 15px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        font-family: Inter, sans-serif;
+    }
+    
+    .search-button {
+        padding: 8px 15px;
+        border: none;
+        background-color: #005C2A;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .search-icon {
+        width: 20px; /* Adjust as needed */
+        height: auto;
+    }
+    .title-header {
+        text-align: left; /* Center align the content */
+        margin: 40px 0; /* Add margin above and below the title */
+        margin-right: 40px;
+        margin-left: 50px;
+        font-family: 'Average', serif;
+        color: #761F1B;
+    }
+}

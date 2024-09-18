@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left-container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-container {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+}
+
+.text-above-buttons {
+    text-align: center;
+    font-family: 'Average', serif;
+    color: #210202;
+    font-size: 30px;
+    margin: -20px 120px 0 120px;
+}
+
+.text-below-buttons {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.button, .button1 {
+    width: 50%;
+    padding: 20px 0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    border-radius: 60px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.button {
+    background-color: #891313;
+    margin-top: -50px;
+}
+
+.button:hover {
+    background-color: #5B0606;
+}
+
+.button1 {
+    background-color: #005C2A;
+    margin-top: -60px;
+}
+
+.button1:hover {
+    background-color: #003B1B;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media query for phones */
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+    .logo {
+        margin-bottom: 0px;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column-reverse; /* Reverse the order of containers */
+    }
+
+    .right-container {
+        flex: 0 0 50%; /* 60% of the viewport height */
+        height: 60vh;
+    }
+
+    .left-container {
+        flex: 0 0 50%; /* 40% of the viewport height */
+        height: 40vh;
+        padding: 10px;
+        justify-content: flex-end; /* Align content to the bottom */
+    }
+    .text-above-buttons {
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    .button, .button1 {
+        width: 80%;
+        height: 10px;
+        margin: 5px 0;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .text-below-buttons {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    .logo {
+        margin-bottom: 0px;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column-reverse; /* Reverse the order of containers */
+    }
+
+    .right-container {
+        flex: 0 0 50%; /* 60% of the viewport height */
+        height: 60vh;
+    }
+
+    .left-container {
+        flex: 0 0 50%; /* 40% of the viewport height */
+        height: 40vh;
+        padding: 10px;
+        justify-content: flex-end; /* Align content to the bottom */
+    }
+    .text-above-buttons {
+        font-size: 26px;
+        margin: 20px;
+    }
+
+    .button, .button1 {
+        width: 80%;
+        height: 10px;
+        margin: 5px 0;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .text-below-buttons {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    .logo {
+        margin-bottom: 0px;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column-reverse; /* Reverse the order of containers */
+    }
+
+    .right-container {
+        flex: 0 0 50%; /* 60% of the viewport height */
+        height: 60vh;
+    }
+
+    .left-container {
+        flex: 0 0 50%; /* 40% of the viewport height */
+        height: 40vh;
+        padding: 10px;
+        justify-content: flex-end; /* Align content to the bottom */
+    }
+    .text-above-buttons {
+        font-size: 28px;
+        margin: 20px;
+    }
+
+    .button, .button1 {
+        width: 80%;
+        height: 10px;
+        margin: 5px 0;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .text-below-buttons {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
